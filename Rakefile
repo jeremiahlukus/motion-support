@@ -16,11 +16,11 @@ Motion::Project::App.setup do |app|
   app.deployment_target = '9.0'
 
   files = [
-    'motion-support/motion/_stdlib/date.rb',
-    'motion-support/motion/_stdlib/array.rb',
-    'motion-support/motion/_stdlib/cgi.rb',
-    'motion-support/motion/_stdlib/time.rb',
-    'motion-support/motion/_stdlib/enumerable.rb'
+    File.expand_path('motion-support/motion/_stdlib/date.rb'),
+    File.expand_path('motion-support/motion/_stdlib/array.rb'),
+    File.expand_path('motion-support/motion/_stdlib/cgi.rb'),
+    File.expand_path('motion-support/motion/_stdlib/time.rb'),
+    File.expand_path('motion-support/motion/_stdlib/enumerable.rb')
   ]
 
   files.each do |f|
